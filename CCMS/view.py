@@ -1,5 +1,8 @@
 from django.http import HttpResponse
 
+def index(request):
+    msg="<h1>LINKS:<br><br> <a href='mission'>MISSION</a><br><br><a href='vision'>VISION</a><br><br><a href='objectives'>QUALITY OBJECTIVES</a><h1/>"
+    return HttpResponse(msg)
 
 
 def mission(request):
